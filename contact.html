@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კონტაქტი | თქვენი დარბაზი</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">თქვენი დარბაზი</a>
+  <nav class="nav">
+    <a href="index.html">მთავარი</a>
+    <a href="weddings.html">ქორწილები</a>
+    <a href="memorial.html">ქელეხი</a>
+    <a href="gallery.html">გალერეა</a>
+    <a class="active" href="contact.html">კონტაქტი</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="section-heading">
+      <p class="eyebrow">ჩვენ მზად ვართ დაგეხმაროთ</p>
+      <h1>კონტაქტი და დაჯავშნა</h1>
+      <p>მოგვწერეთ ან დაგვირეკეთ სასურველი თარიღის შესათანხმებლად.</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h2>საკონტაქტო ინფორმაცია</h2>
+
+        <div class="contact-item">
+          <h3>ტელეფონი</h3>
+          <p><a href="tel:+995000000000">+995 XXX XX XX XX</a></p>
+        </div>
+
+        <div class="contact-item">
+          <h3>მისამართი</h3>
+          <p>ჩაწერეთ თქვენი მისამართი</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>სამუშაო საათები</h3>
+          <p>წინასწარი შეთანხმებით</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>სოციალური ქსელები</h3>
+          <p>
+            <a href="https://facebook.com/">Facebook</a>
+            &nbsp; | &nbsp;
+            <a href="https://instagram.com/">Instagram</a>
+          </p>
+        </div>
+      </div>
+
+      <form class="contact-form"
+            action="mailto:example@email.com"
+            method="post"
+            enctype="text/plain">
+
+        <h2>მოგვწერეთ</h2>
+
+        <label for="name">სახელი</label>
+        <input id="name" name="სახელი"
+               type="text" placeholder="თქვენი სახელი" required>
+
+        <label for="phone">ტელეფონი</label>
+        <input id="phone" name="ტელეფონი"
+               type="tel" placeholder="+995..." required>
+
+        <label for="event">ღონისძიების ტიპი</label>
+        <select id="event" name="ღონისძიება" required>
+          <option value="">აირჩიეთ</option>
+          <option value="ქორწილი">ქორწილი</option>
+          <option value="ქელეხი">ქელეხი</option>
+          <option value="სხვა">სხვა ღონისძიება</option>
+        </select>
+
+        <label for="date">სასურველი თარიღი</label>
+        <input id="date" name="თარიღი" type="date" required>
+
+        <label for="guests">სტუმრების რაოდენობა</label>
+        <input id="guests" name="სტუმრები"
+               type="number" min="1" placeholder="მაგ. 100">
+
+        <label for="message">დამატებითი ინფორმაცია</label>
+        <textarea id="message" name="შეტყობინება"
+                  rows="4" placeholder="ჩაწერეთ თქვენი მოთხოვნა"></textarea>
+
+        <button type="submit" class="btn">გაგზავნა</button>
+
+        <p class="form-note">
+          ეს არის დემო. რეალური გაგზავნისთვის საჭიროა
+          ელფოსტის ან ფორმების სერვისთან დაკავშირება.
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 თქვენი დარბაზი</p>
+</footer>
+
+</body>
+</html>
